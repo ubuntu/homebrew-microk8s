@@ -1,8 +1,8 @@
 cask 'microk8s' do
   version '1.0.0'
-  sha256 '7b76b7d92ab22449adb9b5498de0a50c9e2cd3c43d8adf46553ea7d5ab16948a'
+  sha256 'd5bc0ece595a0c262fa3590de70ff6353ebbd3ac753f511adef4db25a840246e'
 
-  url 'https://ci.appveyor.com/api/buildjobs/as9al9cljdo5ugmf/artifacts/microk8s.tgz'
+  url 'https://github.com/ubuntu/homebrew-microk8s/releases/download/v1.0/microk8s-macos'
   name 'MicroK8s'
   homepage 'https://microk8s.io/'
 
