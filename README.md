@@ -5,7 +5,7 @@
 To install, use the following command.
 
 ```bash
-brew cask install ubuntu/microk8s/microk8s
+brew install ubuntu/microk8s/microk8s
 ```
 
 Then, start the installer.
