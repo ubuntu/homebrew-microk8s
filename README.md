@@ -1,4 +1,4 @@
-# MicroK8s Brew Cask
+# MicroK8s Brew
 
 ## Install
 
