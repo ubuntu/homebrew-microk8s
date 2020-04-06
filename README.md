@@ -13,3 +13,7 @@ Then, start the installer.
 ```bash
 microk8s install
 ```
+
+## Issues and Feature Requests
+
+https://github.com/ubuntu/microk8s/issues
