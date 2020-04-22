@@ -6,7 +6,7 @@ class Microk8s < Formula
   url "https://github.com/ubuntu/microk8s/archive/installer-v1.0.0.tar.gz"
   sha256 "a9bc24c364234c6ead372119009667214b41a00344a8448a0f33861ab3de5112"
 
-  depends_on :macos
+  depends_on :macos => :sierra
   depends_on "python"
 
   resource "altgraph" do
