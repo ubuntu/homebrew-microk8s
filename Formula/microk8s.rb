@@ -78,7 +78,7 @@ class Microk8s < Formula
   def caveats
     <<~EOF
       "Run `microk8s install` to start with MicroK8s"
-    EOS
+    EOF
   end
 
   test do
