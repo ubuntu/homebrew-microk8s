@@ -8,9 +8,11 @@ on:
 jobs:
   live-brew-install:
     runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
     strategy:
       matrix:
         os: [ macos-10.15, macos-11.0 ]
+        experimental: [true]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
