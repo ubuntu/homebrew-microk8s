@@ -10,10 +10,10 @@ jobs:
     runs-on: [ macos-10.15, macos-11.0 ]
     steps:
       - name: Checkout
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Update brew
-      - run: brew update
+        run: brew update
 
       - name: Run brew install
-      - run: brew install ubuntu/microk8s/microk8s
+        run: brew install ubuntu/microk8s/microk8s
