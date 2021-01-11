@@ -3,15 +3,15 @@ class Microk8s < Formula
 
   desc "Small, fast, single-package Kubernetes for developers, IoT and edge"
   homepage "https://microk8s.io/"
-  url "https://github.com/ubuntu/microk8s/archive/installer-v2.0.2.tar.gz"
-  sha256 "dc57f9ce2a10a87483090c093cb0d8a6fd9878a46975a2fbda5a21a8ed080a2a"
+  url "https://github.com/ubuntu/microk8s/archive/installer-v2.0.3.tar.gz"
+  sha256 "fd373312e2a9d4d2448cd6d3eb28b27d61402b165134cc88e53cfb1a40d2effd"
 
   depends_on :macos => :sierra
   depends_on "python"
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/b8/e2/a3a86a67c3fc8249ed305fc7b7d290ebe5e4d46ad45573884761ef4dea7b/certifi-2020.4.5.1.tar.gz"
-    sha256 "51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"
+    url "https://files.pythonhosted.org/packages/06/a9/cd1fd8ee13f73a4d4f491ee219deeeae20afefa914dfb4c130cfc9dc397a/certifi-2020.12.5.tar.gz"
+    sha256 "1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c"
   end
 
   resource "chardet" do
@@ -27,11 +27,6 @@ class Microk8s < Formula
   resource "idna" do
     url "https://files.pythonhosted.org/packages/65/c4/80f97e9c9628f3cac9b98bfca0402ede54e0563b56482e3e6e45c43c4935/idna-2.7.tar.gz"
     sha256 "684a38a6f903c1d71d6d5fac066b58d7768af4de2b832e426ec79c30daa94a16"
-  end
-
-  resource "jsonschema" do
-    url "https://files.pythonhosted.org/packages/58/0d/c816f5ea5adaf1293a1d81d32e4cdfdaf8496973aa5049786d7fdb14e7e7/jsonschema-2.5.1.tar.gz"
-    sha256 "36673ac378feed3daa5956276a829699056523d7961027911f064b52255ead41"
   end
 
   resource "progressbar33" do
@@ -64,11 +59,6 @@ class Microk8s < Formula
     sha256 "9a247273df709c4fedb38c711e44292304f73f39ab01beda9f6b9fc375669ac3"
   end
 
-  resource "wheel" do
-    url "https://files.pythonhosted.org/packages/75/28/521c6dc7fef23a68368efefdcd682f5b3d1d58c2b90b06dc1d0b805b51ae/wheel-0.34.2.tar.gz"
-    sha256 "8788e9155fe14f54164c1b9eb0a319d98ef02c160725587ad60f14ddc57b6f96"
-  end
-
   def install
     venv = virtualenv_create(libexec, "python3")
     venv.pip_install resources
@@ -77,7 +67,7 @@ class Microk8s < Formula
 
   def caveats
     <<~EOF
-      "Run `microk8s install` to start with MicroK8s"
+      Run `microk8s install` to start with MicroK8s
     EOF
   end
 
