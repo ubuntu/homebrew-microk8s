@@ -1,0 +1,19 @@
+name: Test homebrew install
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  live-brew-install:
+    runs-on: [ macos-10.15, macos-11.0 ]
+    steps:
+      - name: Checkout
+      - uses: actions/checkout@v2
+
+      - name: Update brew
+      - run: brew update
+
+      - name: Run brew install
+        run: brew install ubuntu/microk8s/microk8s
