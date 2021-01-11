@@ -16,4 +16,4 @@ jobs:
       - run: brew update
 
       - name: Run brew install
-        run: brew install ubuntu/microk8s/microk8s
+      - run: brew install ubuntu/microk8s/microk8s
