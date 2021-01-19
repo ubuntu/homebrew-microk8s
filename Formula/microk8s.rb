@@ -3,11 +3,12 @@ class Microk8s < Formula
 
   desc "Small, fast, single-package Kubernetes for developers, IoT and edge"
   homepage "https://microk8s.io/"
-  url "https://github.com/ubuntu/microk8s/archive/installer-v2.0.3.tar.gz"
-  sha256 "fd373312e2a9d4d2448cd6d3eb28b27d61402b165134cc88e53cfb1a40d2effd"
+  url "https://github.com/ubuntu/microk8s/archive/installer-v2.1.0.tar.gz"
+  sha256 "78532baee3739893f1c9d344eacb63441d698334f6ec5dba9e678d06ee3525f9"
 
   depends_on :macos => :sierra
   depends_on "python"
+  depends_on "kubernetes-cli"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/06/a9/cd1fd8ee13f73a4d4f491ee219deeeae20afefa914dfb4c130cfc9dc397a/certifi-2020.12.5.tar.gz"
