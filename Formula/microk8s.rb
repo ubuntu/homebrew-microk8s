@@ -3,8 +3,8 @@ class Microk8s < Formula
 
   desc "Small, fast, single-package Kubernetes for developers, IoT and edge"
   homepage "https://microk8s.io/"
-  url "https://github.com/canonical/microk8s/archive/refs/tags/installer-v2.3.2.tar.gz"
-  sha256 "e1c36c61019808978cd62642202f3485dbc574b2f2b3a815a6350695be576674"
+  url "https://github.com/canonical/microk8s/archive/refs/tags/installer-v2.3.3.tar.gz"
+  sha256 "ab8ef64e7ff8e3cb93cb0ebc64c39b85e0508f8b8390cb937269d15d17c0ffa6"
 
   depends_on :macos => :sierra
   depends_on "python"
